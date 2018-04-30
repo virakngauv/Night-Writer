@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var dotDisplay: UIImageView!
-    @IBOutlet weak var inputText: UITextField!
     var messageArray : [UIImage] = []
     var letters : [String] = []
     var number : Int = 1
@@ -24,11 +23,6 @@ class ViewController: UIViewController {
         receiveTextInput()
         createMessage()
         displayMesasge()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     

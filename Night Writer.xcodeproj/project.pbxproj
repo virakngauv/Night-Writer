@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2B6D8A2097A3520056465E /* MessagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2B6D892097A3520056465E /* MessagePickerViewController.swift */; };
 		DD8EA9C62016355C00DEDAC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EA9C52016355C00DEDAC3 /* AppDelegate.swift */; };
 		DD8EA9C82016355C00DEDAC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8EA9C72016355C00DEDAC3 /* ViewController.swift */; };
 		DD8EA9CB2016355C00DEDAC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8EA9C92016355C00DEDAC3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD2B6D892097A3520056465E /* MessagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePickerViewController.swift; sourceTree = "<group>"; };
 		DD8EA9C22016355C00DEDAC3 /* Night Writer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Night Writer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8EA9C52016355C00DEDAC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8EA9C72016355C00DEDAC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				DD8EA9C52016355C00DEDAC3 /* AppDelegate.swift */,
+				DD2B6D892097A3520056465E /* MessagePickerViewController.swift */,
 				DD8EA9C72016355C00DEDAC3 /* ViewController.swift */,
 				DD8EA9C92016355C00DEDAC3 /* Main.storyboard */,
 				DD8EA9CC2016355C00DEDAC3 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8EA9C82016355C00DEDAC3 /* ViewController.swift in Sources */,
+				DD2B6D8A2097A3520056465E /* MessagePickerViewController.swift in Sources */,
 				DD8EA9C62016355C00DEDAC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
