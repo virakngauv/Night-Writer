@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var dotDisplay: UIImageView!
+    @IBOutlet weak var testView: UIImageView!
+    
+    
     var messageArray : [UIImage] = []
     var letters : [String] = []
     var number : Int = 1
     var frameNum : Int = 0
     
+    // testView Testing Area:
+ 
+    var imageProcessor = ImageProcessor()
+    
+    func testViewMethod () {
+        
+        testView.image = imageProcessor.convertLetterToDot("s")
+        print(testView.image?.size.height)
+        print(testView.image?.size.width)
+        
+    }
+    
+    // testView Testing Area END
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +39,9 @@ class ViewController: UIViewController {
         receiveTextInput()
         createMessage()
         displayMesasge()
+        
+        //testing testViewMethod:
+        testViewMethod()
     }
     
     
