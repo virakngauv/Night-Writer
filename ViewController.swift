@@ -23,11 +23,9 @@ class ViewController: UIViewController {
     var imageProcessor = ImageProcessor()
     
     func testViewMethod () {
-        
-        testView.image = imageProcessor.convertLetterToDot("s")
-        print(testView.image?.size.height)
-        print(testView.image?.size.width)
-        
+        messageArray = imageProcessor.convertLetterToDot("s", testView)
+        let animatedMessage = UIImage.animatedImage(with: messageArray, duration: 5)
+        testView.image = animatedMessage
     }
     
     // testView Testing Area END
@@ -165,7 +163,7 @@ class ViewController: UIViewController {
     func displayMesasge (){
         messageArray = messageArray + messageArray.reversed()
         let animatedMessage = UIImage.animatedImage(with: messageArray, duration: Double(frameNum)*2*(1/60))
-        dotDisplay.image = animatedMessage
+//        dotDisplay.image = animatedMessage
     }
 
 

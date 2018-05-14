@@ -18,16 +18,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="h1" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-Hm-R7n">
-                                <rect key="frame" x="67" y="118" width="240" height="529"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-Hm-R7n">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="byk-2w-j7C">
-                                <rect key="frame" x="39" y="71" width="336" height="576"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="byk-2w-j7C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ptv-Hm-R7n" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GLb-BZ-SLj"/>
+                            <constraint firstItem="Ptv-Hm-R7n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jwk-Pe-OFM"/>
+                            <constraint firstItem="byk-2w-j7C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Rjg-aD-I3W"/>
+                            <constraint firstItem="Ptv-Hm-R7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TNy-Dl-klO"/>
+                            <constraint firstItem="byk-2w-j7C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dZx-RW-CYt"/>
+                            <constraint firstItem="Ptv-Hm-R7n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="m5G-UD-9Wg"/>
+                            <constraint firstItem="byk-2w-j7C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="s0a-DC-EHK"/>
+                            <constraint firstItem="byk-2w-j7C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sAa-OZ-J38"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -112,7 +120,4 @@
             <point key="canvasLocation" x="1160.8" y="116.49175412293854"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="h1" width="133" height="868"/>
-    </resources>
 </document>
