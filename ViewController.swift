@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var dotDisplay: UIImageView!
     @IBOutlet weak var testView: UIImageView!
     
-    
     var messageArray : [UIImage] = []
     var letters : [String] = []
     var number : Int = 1
@@ -23,8 +22,23 @@ class ViewController: UIViewController {
     var imageProcessor = ImageProcessor()
     
     func testViewMethod () {
-        messageArray = imageProcessor.convertLetterToDot("0", testView)
-        let animatedMessage = UIImage.animatedImage(with: messageArray, duration: 5/120)
+        letters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        
+        messageArray += imageProcessor.addRedCalibrationBar(testView)
+        frameNum += 10
+        
+        for letter in letters {
+            messageArray += imageProcessor.convertLetterToDot(letter, testView)
+            frameNum += 6
+        }
+        
+        messageArray += imageProcessor.addBlueCalibrationBar(testView)
+        frameNum += 10
+        
+        //messageArray = imageProcessor.convertLetterToDot("0", testView)
+        messageArray = messageArray + messageArray.reversed()
+        frameNum = frameNum*2
+        let animatedMessage = UIImage.animatedImage(with: messageArray, duration: Double(frameNum/60))
         testView.image = animatedMessage
     }
     
@@ -34,9 +48,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        receiveTextInput()
-        createMessage()
-        displayMesasge()
+        //receiveTextInput()
+        //createMessage()
+        //displayMesasge()
         
         //testing testViewMethod:
         testViewMethod()
@@ -163,7 +177,7 @@ class ViewController: UIViewController {
     func displayMesasge (){
         messageArray = messageArray + messageArray.reversed()
         let animatedMessage = UIImage.animatedImage(with: messageArray, duration: Double(frameNum)*2*(1/60))
-//        dotDisplay.image = animatedMessage
+        dotDisplay.image = animatedMessage
     }
 
 
