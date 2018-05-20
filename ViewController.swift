@@ -23,8 +23,8 @@ class ViewController: UIViewController {
     var imageProcessor = ImageProcessor()
     
     func testViewMethod () {
-        messageArray = imageProcessor.convertLetterToDot("s", testView)
-        let animatedMessage = UIImage.animatedImage(with: messageArray, duration: 5)
+        messageArray = imageProcessor.convertLetterToDot("0", testView)
+        let animatedMessage = UIImage.animatedImage(with: messageArray, duration: 5/120)
         testView.image = animatedMessage
     }
     
