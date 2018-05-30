@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     var imageProcessor = ImageProcessor()
     
     func testViewMethod () {
-        letters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        letters = ["_", "h", "i", "!", "_"]
         
         messageArray += imageProcessor.addRedCalibrationBar(testView)
         frameNum += 10
